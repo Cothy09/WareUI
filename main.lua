@@ -16,7 +16,24 @@ local TweenService = game:GetService("TweenService")
 local UserInputService = game:GetService("UserInputService")
 local RunService = game:GetService("RunService")
 
-local Themes = require(script.Parent:WaitForChild("Themes"))
+local Themes = {
+    Dark = {
+        Panel = Color3.fromRGB(30, 30, 30),
+        Card = Color3.fromRGB(40, 40, 40),
+        Muted = Color3.fromRGB(60, 60, 60),
+        Accent = Color3.fromRGB(0, 170, 255),
+        AccentHover = Color3.fromRGB(0, 200, 255),
+        Stroke = Color3.fromRGB(0,0,0),
+        TextPrimary = Color3.fromRGB(255,255,255),
+        TextSecondary = Color3.fromRGB(200,200,200),
+        Success = Color3.fromRGB(0, 255, 0),
+        Warning = Color3.fromRGB(255, 255, 0),
+        Danger = Color3.fromRGB(255, 0, 0),
+        Shadow = Color3.fromRGB(0,0,0),
+        ShadowTransparency = 0.5,
+        Font = Enum.Font.Gotham
+    }
+}
 
 local Library = {}
 Library.__index = Library
